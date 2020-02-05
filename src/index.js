@@ -3,4 +3,4 @@ import ReactDom from 'react-dom';
 import App from './components/app';
 
 ReactDom.render(
-    <App />, document.getElementById(`root`));
+    <App name="Jack"/>, document.getElementById(`root`));

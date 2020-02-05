@@ -5,7 +5,8 @@ import WelcomeScreen from './welcome-screen';
 class App extends Component {
   render() {
     return (
-      <WelcomeScreen name="Jack" />
+      // eslint-disable-next-line react/prop-types
+      <WelcomeScreen name={this.props.name} />
     );
   }
 }
