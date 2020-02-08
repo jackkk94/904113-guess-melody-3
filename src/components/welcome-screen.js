@@ -1,13 +1,17 @@
-// eslint-disable-next-line no-unused-vars
 import React, {Component} from 'react';
+import PropTypes from 'prop-types';
 
 class WelcomeScreen extends Component {
   render() {
     return (
-    // eslint-disable-next-line react/prop-types
       <div>Hello {this.props.name} !</div>
     );
   }
 }
 
 export default WelcomeScreen;
+
+
+WelcomeScreen.propTypes = {
+  name: PropTypes.string.isRequired,
+};
