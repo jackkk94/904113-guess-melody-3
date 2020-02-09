@@ -11,12 +11,12 @@ Enzyme.configure({
 const name = `Alex`;
 
 it(`<WelcomeScreen /> should be pressed`, () => {
-  const onBtnClick = jest.fn();
+  const onButtonClick = jest.fn();
 
   const screen = shallow(
       <WelcomeScreen
         name = {name}
-        onButtonClick={onBtnClick}
+        onButtonClick={onButtonClick}
       />
   );
 
@@ -24,5 +24,5 @@ it(`<WelcomeScreen /> should be pressed`, () => {
 
   btn.props().onClick();
 
-  expect(onBtnClick.mock.calls.length).toBe(1);
+  expect(onButtonClick.mock.calls.length).toBe(1);
 });

@@ -6,7 +6,7 @@ const name = `Alex`;
 
 it(`<WelcomeScreen /> should render Alex`, () => {
   const tree = renderer
-    .create(<WelcomeScreen name = {name}/>)
+    .create(<WelcomeScreen name = {name} onButtonClick={() => {}}/>)
     .toJSON();
 
   expect(tree).toMatchSnapshot();
